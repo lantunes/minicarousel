@@ -3,6 +3,7 @@ It has no dependencies, and is about 4 KB when minified.
 
 Usage:
 
+<script type="text/javascript" src="minicarousel.js"></script>
 <script type="text/javascript">
 window.onload = function() 
 {
