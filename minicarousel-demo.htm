@@ -1,0 +1,74 @@
+<html>
+<head>
+<style type="text/css">
+table,th,td {
+ border:1px solid black;
+}
+td {
+ padding:10px;
+}
+</style>
+<script type="text/javascript" src="minicarousel-src.js"></script>
+<script type="text/javascript">
+window.onload = function() 
+{
+	new minicarousel({
+		scrollingElementId: 'pics',
+		width: 350,
+		height: 250,
+		leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
+		rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
+		amountToScroll: 350,
+		mode: 'horizontal'
+	});
+	
+	new minicarousel({
+		scrollingElementId: 'vertpics',
+		width: 350,
+		height: 250,
+		leftOrUpHTML: {enabled: '<b>up</b>', disabled: '<b>upd</b>'},
+		rightOrDownHTML: {enabled: '<b>down</b>', disabled: '<b>downd</b>'},
+		amountToScroll: 250,
+		mode: 'vertical',
+		timeout: 10
+	});
+	
+	new minicarousel({
+		scrollingElementId: 'multipics',
+		width: 700,
+		height: 250,
+		leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
+		rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
+		amountToScroll: 350,
+		mode: 'horizontal',
+		timeout: 50
+	});
+}
+</script>
+</head>
+<body>
+<table>
+<tr>
+	<td>
+		<div id="pics" style="width:1050px">
+			<img src="images/one.jpg" /><img src="images/two.jpg" /><img src="images/three.jpg" />
+		</div>
+	</td>
+	<td>
+		<div id="vertpics" style="height:750px">
+			<div><img src="images/one.jpg" /></div>
+			<div><img src="images/two.jpg" /></div>
+			<div><img src="images/three.jpg" /></div>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<div id="multipics" style="width:1400px">
+			<img src="images/one.jpg" /><img src="images/two.jpg" /><img src="images/three.jpg" /><img src="images/four.jpg" />
+		</div>
+	</td>
+</tr>
+</table>
+</body>
+</html>
