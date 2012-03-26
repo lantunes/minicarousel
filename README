@@ -1,20 +1,21 @@
-Minicarousel is a minimal JavaScript carousel. It has no dependencies, and is about 4 KB when minified.
+Minicarousel is a minimal JavaScript carousel. 
+It has no dependencies, and is about 4 KB when minified.
 
 Usage:
 
 <script type="text/javascript">
 window.onload = function() 
 {
-	new minicarousel({
-		scrollingElementId: 'multipics',
-		width: 700,
-		height: 250,
-		leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
-		rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
-		amountToScroll: 350,
-		mode: 'horizontal',
-		timeout: 50
-	});
+  new minicarousel({
+    scrollingElementId: 'multipics',
+    width: 700,
+    height: 250,
+    leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
+    rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
+    amountToScroll: 350,
+    mode: 'horizontal',
+    timeout: 50
+  });
 }
 </script>
 
