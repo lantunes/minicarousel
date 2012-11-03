@@ -8,7 +8,7 @@ td {
  padding:10px;
 }
 </style>
-<script type="text/javascript" src="minicarousel-src.js"></script>
+<script type="text/javascript" src="minicarousel.js"></script>
 <script type="text/javascript">
 window.onload = function() 
 {
@@ -16,8 +16,14 @@ window.onload = function()
 		scrollingElementId: 'pics',
 		width: 350,
 		height: 250,
-		leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
-		rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
+		leftOrUpHTML: {
+			enabled: '<font size"30"><b>&laquo;</b></font>', 
+			disabled: '&laquo;'
+		},
+		rightOrDownHTML: {
+			enabled: '<b>&raquo;</b>', 
+			disabled: '&raquo;'
+		},
 		amountToScroll: 350,
 		mode: 'horizontal'
 	});
@@ -26,8 +32,14 @@ window.onload = function()
 		scrollingElementId: 'vertpics',
 		width: 350,
 		height: 250,
-		leftOrUpHTML: {enabled: '<b>up</b>', disabled: '<b>upd</b>'},
-		rightOrDownHTML: {enabled: '<b>down</b>', disabled: '<b>downd</b>'},
+		leftOrUpHTML: {
+			enabled: '<b>up</b>', 
+			disabled: '<b>upd</b>'
+		},
+		rightOrDownHTML: {
+			enabled: '<b>down</b>', 
+			disabled: '<b>downd</b>'
+		},
 		amountToScroll: 250,
 		mode: 'vertical',
 		timeout: 10
@@ -37,8 +49,14 @@ window.onload = function()
 		scrollingElementId: 'multipics',
 		width: 700,
 		height: 250,
-		leftOrUpHTML: {enabled: '<b>left</b>', disabled: '<b>leftd</b>'},
-		rightOrDownHTML: {enabled: '<b>right</b>', disabled: '<b>rightd</b>'},
+		leftOrUpHTML: {
+			enabled: '<b>&laquo;</b>', 
+			disabled: '&laquo;'
+		},
+		rightOrDownHTML: {
+			enabled: '<b>&raquo;</b>', 
+			disabled: '&raquo;'
+		},
 		amountToScroll: 350,
 		mode: 'horizontal',
 		timeout: 50
